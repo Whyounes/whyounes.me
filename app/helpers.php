@@ -2,7 +2,7 @@
 
 if ( ! function_exists('link_to_post'))
 {
-	function link_to_post($post, $title = null)
+	function link_to_post($post, $title = null, $jumpTo = null)
 	{
 		$year = date('Y', strtotime($post->date));
 		$month = date('m', strtotime($post->date));
@@ -13,6 +13,12 @@ if ( ! function_exists('link_to_post'))
 			$title = $post->title;
 		}
 
-		return link_to_route('post', $title, [$year, $month, $day, $slug]);
+		$link = app('url')->route('post', [$year, $month, $day, $slug]);
+
+		if (! is_null($jumpTo)) {
+			$link .= '#'.$jumpTo;
+		}
+
+		return app('html')->link($link, $title);
 	}
 }

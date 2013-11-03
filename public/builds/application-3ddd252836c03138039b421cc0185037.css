@@ -240,6 +240,17 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
+.content-section {
+  border-top: 1px solid #e1e1e1;
+}
+.content-section h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content-section p {
+  text-align: justify;
+}
 body {
   background-color: #fff;
   color: #333333;
@@ -252,6 +263,14 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+}
+a {
+  color: #9C8A6A;
+  text-decoration: none;
+}
+a:hover {
+  color: #333333;
+  text-decoration: underline;
 }
 .container {
   margin-left: auto;
@@ -306,7 +325,7 @@ nav a:hover {
   font-style: italic;
   font-size: 12.8px;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   text-align: center;
   width: 400px;
 }
@@ -315,14 +334,14 @@ ul.pager {
   padding: 2em 0;
   margin: 0;
   border-top: 1px solid #e1e1e1;
-  color: #8c8c8c;
+  color: #9C8A6A;
 }
 ul.pager .disabled {
   visibility: hidden;
 }
 ul.pager a {
   text-decoration: none;
-  color: #8c8c8c;
+  color: #9C8A6A;
 }
 ul.pager a:hover {
   text-decoration: underline;
@@ -334,25 +353,79 @@ ul.pager li {
 ul.pager li:last-child {
   float: right;
 }
-article {
-  padding-bottom: 3em;
-}
-article header {
+.comments-link {
   text-align: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  padding: 2em;
+}
+.about {
   border-top: 1px solid #e1e1e1;
 }
-article header .published {
+.about h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about p {
+  text-align: justify;
+}
+.archives {
+  border-top: 1px solid #e1e1e1;
+  padding-bottom: 3em;
+}
+.archives h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.archives p {
+  text-align: justify;
+}
+.archives .recent-posts h2 {
+  font-size: 17.6px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #c8c8c8;
+  margin-bottom: 0px;
+}
+.archives .recent-posts ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.archives .recent-posts li {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0.5em 0;
+}
+.archives .recent-posts li .date {
+  float: right;
+  color: #8c8c8c;
+}
+.archives .recent-posts a {
+  color: #9C8A6A;
+  text-decoration: none;
+}
+.archives .recent-posts a:hover {
+  color: #333333;
+  text-decoration: underline;
+}
+article {
+  border-top: 1px solid #e1e1e1;
+}
+article .published {
+  text-align: center;
   font-size: 12px;
   color: #8c8c8c;
 }
-article header .published .date {
+article .published .date {
   display: inline-block;
   background: #fff;
   position: relative;
   top: -9px;
   padding: 0 0.5em;
+}
+article header {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 article header h1 {
   font-size: 24px;
@@ -375,4 +448,19 @@ article .content {
 }
 article code {
   font-size: 0.8em;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #8c8c8c;
+  border-top: 1px solid #c8c8c8;
+  padding: 2em 0;
+}
+footer a {
+  text-decoration: none;
+  color: #9C8A6A;
+}
+footer a:hover {
+  color: #333333;
+  text-decoration: underline;
 }

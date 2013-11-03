@@ -2,7 +2,6 @@ title: Putting your Laravel controllers on a diet
 author: Adam Wathan
 slug: putting-your-laravel-controllers-on-a-diet
 date: 2013-10-02
-tags: [laravel, refactoring]
 
 Imagine you're building a web application that needs to allow new users to register *(crazy idea right?)*.
 

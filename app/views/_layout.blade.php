@@ -24,6 +24,7 @@
             @yield('content')
         </section>
         <footer>
+            <p>&copy; Adam Wathan. Proudly built with <a href="http://laravel.com/">Laravel</a>.</p>
         </footer>
     </div>
     {{ HTML::script('/js/prism.js') }}

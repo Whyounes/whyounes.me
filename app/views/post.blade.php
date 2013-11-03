@@ -2,5 +2,7 @@
 
 @section('content')
 @include('partials.post')
-{{ Disqus::comments() }}
+<div id="comments">
+	{{ Disqus::comments() }}
+</div>
 @stop

@@ -26,7 +26,7 @@ class BlogServiceProvider extends ServiceProvider {
 	protected function registerPostsPath()
 	{
 		$this->app['blog.posts_path'] = $this->app->share(function($app) {
-			return app_path().'/posts/';
+			return app_path().'/posts/published/';
 		});
 	}
 
