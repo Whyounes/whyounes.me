@@ -18,7 +18,7 @@
             </ul>
         </nav>
         <aside id="site-description">
-            The lysine contingency - it's intended to prevent the spread of the animals in case they ever got off the island.
+            Laravel, PHP, building web applications and ...powerlifting?
         </aside>
         <section>
             @yield('content')
