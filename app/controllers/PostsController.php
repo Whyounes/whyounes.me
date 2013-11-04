@@ -14,7 +14,7 @@ class PostsController extends BaseController
 	public function showIndex()
 	{
 		$view = View::make('index');
-		$view->posts = $this->posts->paginate(1);
+		$view->posts = $this->posts->paginate(3);
 		$view->title = 'adamwathan.me';
 		return $view;
 	}
