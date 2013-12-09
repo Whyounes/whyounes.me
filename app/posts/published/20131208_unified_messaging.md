@@ -11,29 +11,29 @@ I want to be able to go down into the basement and get a workout in, while still
 
 We're getting so damn close to this being a reality, but at the moment there is at least one deal breaking flaw with all of the options I've tried.
 
-# The Competition
+## The Competition
 
-## Google Hangouts
+### Google Hangouts
 
 Google Hangouts is pretty solid, but the desktop client is brutal. You can't cmd+tab to it like any of your other open applications, which drives me insane. Google also decided to prevent awesome third party clients like Flamingo from being able to use the group chat functionality. Great.
 
-## Skype
+### Skype
 
 Can't start group chats from the mobile client. Have to pay to do group video conferences. No thanks.
 
-## What's App
+### What's App
 
 Great chat client, does group messaging really well too. No desktop client though and can't do voice/video, so it's not a full solution.
 
-## BBM
+### BBM
 
 Every group message I receive though shows up on my home screen and then doesn't exist in the actual app. Doesn't do voice or video. Also totally awkward to navigate. I'll pass.
 
-## iMessage/FaceTime
+### iMessage/FaceTime
 
 Honestly iMessage and FaceTime are basically perfect, especially since the addition of FaceTime Audio in iOS 7. I love that I don't even notice iMessage exists, it just integrates perfectly seamlessly with the existing messaging system. Same with FaceTime, can make calls directly from my contact list just like a regular phone call without having to go through any extra steps. The obvious issue here is that all this stuff is iOS only, and most of the damn people I want to talk to are on Android devices.
 
-# Verdict
+## Verdict
 
 iMessage/FaceTime is *by far* the most complete and enjoyable to use of the bunch. Seamless integration, great lightweight desktop client, does group chatting totally fine from any device, offers voice and video, etc. Locking it to iOS totally takes it out of the running though, which is a real heart breaker.
 
