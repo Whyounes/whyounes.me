@@ -18,7 +18,7 @@
             </ul>
         </nav>
         <aside id="site-description">
-            Laravel, PHP, building web applications and ...powerlifting?
+            Laravel, software development, technology, powerlifting, whatever.
         </aside>
         <section>
             @yield('content')
