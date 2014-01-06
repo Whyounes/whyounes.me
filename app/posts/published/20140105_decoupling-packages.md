@@ -53,6 +53,8 @@ public function getError($key)
 
 But we all know this sucks, because now you can't mock the Session class since it's hardcoded into the form builder.
 
+> I realize you can still mock this specific class due to some IOC and Facade magic in Laravel, but that's a bit besides the point.
+
 ## Something a little better
 
 A better option would be to inject the Session object into the form builder. This way we can at least easily swap it out with a mock so we can actually test this thing.
