@@ -42,4 +42,12 @@ class PostsController extends BaseController
 		$view->title = 'Archives : adamwathan.me';
 		return $view;
 	}
+
+	public function rss()
+	{
+		$posts = $this->posts->paginate(100);
+		return Response::view('rss', compact('posts'), 200, array(
+			'Content-Type' => 'application/rss+xml; charset=UTF-8',
+			));
+	}
 }

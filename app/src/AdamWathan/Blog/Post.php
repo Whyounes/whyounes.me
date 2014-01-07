@@ -3,6 +3,7 @@
 use File;
 use \Michelf\MarkdownExtra;
 use AdamWathan\MetaMarkdown\MetaMarkdown;
+use Carbon\Carbon;
 
 class Post
 {
@@ -17,4 +18,10 @@ class Post
 	{
 		return $this->html;
 	}
+
+    public function rssDate()
+    {
+        $dt = Carbon::createFromFormat('Y-m-d', $this->date);
+        return $dt->toRSSString();
+    }
 }
