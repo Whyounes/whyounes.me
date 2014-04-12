@@ -18,7 +18,7 @@
             </ul>
         </nav>
         <aside id="site-description">
-            Laravel, software development, technology, powerlifting, whatever.
+            Thoughts on modern web application development.
         </aside>
         <section>
             @yield('content')
