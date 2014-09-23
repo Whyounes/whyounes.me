@@ -9,7 +9,10 @@
 		<h2>Recent Posts</h2>
 		<ul>
 			@foreach($posts as $post)
-			<li>{{ link_to_post($post) }} <span class="date">{{ date('F j, Y', strtotime($post->date)) }}</span></li>
+			<li>
+				<aside class="date">{{ date('F j, Y', strtotime($post->date)) }}</aside>
+				{{ link_to_post($post) }}
+			</li>
 			@endforeach
 		</ul>
 	</div>

@@ -29,10 +29,14 @@
 @page-width: 35em;
 @base-color: rgb(51, 51, 51);
 @light-color: lighten(@base-color, 35%);
-@base-size: 16px;
-@base-font: 'palatino';
+@lighter-color: lighten(@base-color, 50%);
 @separator-color: rgb(225,225,225);
 @link-color: #9C8A6A;
+
+// Fonts
+@base-font: 'palatino';
+@base-size: 16px;
+@font-size-small: @base-size * 0.8;
 
 // Styles
 body {
@@ -109,7 +113,7 @@ nav {
 #site-description {
 	color: @light-color;
 	font-style: italic;
-	font-size: @base-size * 0.8;
+	font-size: @font-size-small;
 	margin-top: 2em;
 	margin-bottom: 3em;
 	text-align: center;
@@ -176,8 +180,8 @@ ul.pager {
 			border-bottom: 1px solid @separator-color;
 			padding: 0.5em 0;
 			.date {
-				float: right;
-				color: @light-color;
+				font-size: @font-size-small;
+				color: @lighter-color;
 			}
 		}
 		a {

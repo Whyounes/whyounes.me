@@ -404,8 +404,8 @@ ul.pager li:last-child {
   padding: 0.5em 0;
 }
 .archives .recent-posts li .date {
-  float: right;
-  color: #8c8c8c;
+  font-size: 12.8px;
+  color: #b3b3b3;
 }
 .archives .recent-posts a {
   color: #9C8A6A;
