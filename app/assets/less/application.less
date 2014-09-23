@@ -55,7 +55,11 @@ a {
 
 .container {
 	.center;
+	box-sizing: border-box;
 	width: @page-width;
+	max-width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 header {
@@ -103,14 +107,12 @@ nav {
 }
 
 #site-description {
-	.center;
 	color: @light-color;
 	font-style: italic;
 	font-size: @base-size * 0.8;
 	margin-top: 2em;
 	margin-bottom: 3em;
 	text-align: center;
-	width: 400px;
 }
 
 blockquote {

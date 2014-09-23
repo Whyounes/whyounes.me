@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     @stylesheets('application')
     {{ HTML::style('/css/prism.css') }}
     <title>{{ $title }}</title>
