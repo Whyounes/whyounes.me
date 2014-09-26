@@ -247,9 +247,6 @@ table {
   font-size: 24px;
   text-align: center;
 }
-.content-section p {
-  text-align: justify;
-}
 body {
   background-color: #fff;
   color: #333333;
@@ -371,9 +368,6 @@ ul.pager li:last-child {
   font-size: 24px;
   text-align: center;
 }
-.about p {
-  text-align: justify;
-}
 .archives {
   border-top: 1px solid #e1e1e1;
   padding-bottom: 3em;
@@ -381,9 +375,6 @@ ul.pager li:last-child {
 .archives h1 {
   font-size: 24px;
   text-align: center;
-}
-.archives p {
-  text-align: justify;
 }
 .archives .recent-posts ul {
   list-style-type: none;
@@ -441,9 +432,6 @@ article header .byline {
   font-style: italic;
   color: #8c8c8c;
   font-size: 12px;
-}
-article .content {
-  text-align: justify;
 }
 article code {
   font-size: 0.8em;
