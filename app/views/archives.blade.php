@@ -6,7 +6,6 @@
 		<h1>Archives</h1>
 	</header>
 	<div class="recent-posts">
-		<h2>Recent Posts</h2>
 		<ul>
 			@foreach($posts as $post)
 			<li>
