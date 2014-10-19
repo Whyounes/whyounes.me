@@ -1,7 +1,9 @@
+---
 title: Decoupling your packages from your framework
 author: Adam Wathan
 slug: decoupling-your-packages-from-your-framework
 date: 2014-01-05
+---
 
 Recently, there was a bit of a debate on Twitter about the value of framework agnostic packages vs. the effort required to build them.
 

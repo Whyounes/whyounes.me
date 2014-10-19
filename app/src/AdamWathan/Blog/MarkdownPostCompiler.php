@@ -17,10 +17,10 @@ class MarkdownPostCompiler implements PostCompilerInterface
 
 	private function extractMetadata()
 	{
-		$pattern = '/^(.+:\s+.+\n)+([\s\S]*)/';
+		$pattern = '/^---\n([\s\S]*)\n---\n([\s\S]*)/';
 		preg_match($pattern, $this->source, $matches);
-		
-		$metaData = explode("\n", $matches[0]);
+
+		$metaData = explode("\n", $matches[1]);
 		$this->parseMetaData($metaData);
 
 		$this->post->html = $this->compileHtml($matches[2]);

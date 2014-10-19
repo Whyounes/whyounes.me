@@ -1,7 +1,9 @@
+---
 title: The Virtual Proxy Pattern
 author: Adam Wathan
 slug: the-virtual-proxy-pattern
 date: 2014-06-14
+---
 
 Another post of mine from the Vehikl blog last month, this time about one of the interesting patterns I used when developing [Faktory](https://github.com/vehikl/faktory).
 

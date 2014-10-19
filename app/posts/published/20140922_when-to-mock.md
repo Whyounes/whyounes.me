@@ -1,7 +1,9 @@
+---
 title: When to mock
 author: Adam Wathan
 slug: when-to-mock
 date: 2014-09-22
+---
 
 Test doubles come in a ton of different flavors.
 
