@@ -240,6 +240,9 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
+.text-center {
+  text-align: center;
+}
 .content-section {
   border-top: 1px solid #e1e1e1;
 }

@@ -6,7 +6,11 @@ Route::get('archives', ['as' => 'archives', 'uses' => 'PostsController@showArchi
 Route::get('rss', ['as' => 'rss', 'uses' => 'PostsController@rss']);
 
 Route::get('about', ['as' => 'about', function() {
-	return View::make('about')->with('title', 'About : adamwathan.me');
+    return View::make('about')->with('title', 'About : adamwathan.me');
+}]);
+
+Route::get('talks', ['as' => 'talks', function() {
+	return View::make('talks')->with('title', 'Talks : adamwathan.me');
 }]);
 
 App::missing(function($exception) {
