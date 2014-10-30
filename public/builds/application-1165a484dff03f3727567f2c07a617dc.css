@@ -245,6 +245,7 @@ table {
 }
 .content-section {
   border-top: 1px solid #e1e1e1;
+  padding-bottom: 3em;
 }
 .content-section h1 {
   font-size: 24px;
@@ -366,6 +367,7 @@ ul.pager li:last-child {
 }
 .about {
   border-top: 1px solid #e1e1e1;
+  padding-bottom: 3em;
 }
 .about h1 {
   font-size: 24px;
