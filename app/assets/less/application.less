@@ -36,14 +36,18 @@
 
 // Fonts
 @base-font: 'palatino';
-@base-size: 18px;
+@base-size: 1em;
 @font-size-small: @base-size * 0.8;
 
 // Styles
 body {
     background-color: @background-color;
     color: @base-color;
-    font: 400 @base-size/1.6 @base-font, Georgia, serif;
+    font: 400 14px/1.6 @base-font, Georgia, serif;
+}
+
+@media (min-width: 768px) {
+    body { font-size: 18px; }
 }
 
 h1, h2, h3, h4, h5, h6 {

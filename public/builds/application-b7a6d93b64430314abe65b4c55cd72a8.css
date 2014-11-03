@@ -248,13 +248,18 @@ table {
   padding-bottom: 3em;
 }
 .content-section h1 {
-  font-size: 27px;
+  font-size: 1.5em;
   text-align: center;
 }
 body {
   background-color: #fff;
   color: #333333;
-  font: 400 18px/1.6 'palatino', Georgia, serif;
+  font: 400 14px/1.6 'palatino', Georgia, serif;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
 }
 h1,
 h2,
@@ -282,7 +287,7 @@ a:hover {
   padding-right: 15px;
 }
 header h1 {
-  font-size: 45px;
+  font-size: 2.5em;
   text-align: center;
   margin-bottom: 0.25em;
 }
@@ -325,7 +330,7 @@ nav a:hover {
 #site-description {
   color: #8c8c8c;
   font-style: italic;
-  font-size: 14.4px;
+  font-size: 0.8em;
   margin-top: 2em;
   margin-bottom: 3em;
   text-align: center;
@@ -370,7 +375,7 @@ ul.pager li:last-child {
   padding-bottom: 3em;
 }
 .about h1 {
-  font-size: 27px;
+  font-size: 1.5em;
   text-align: center;
 }
 .archives {
@@ -378,7 +383,7 @@ ul.pager li:last-child {
   padding-bottom: 3em;
 }
 .archives h1 {
-  font-size: 27px;
+  font-size: 1.5em;
   text-align: center;
 }
 .archives .recent-posts ul {
@@ -391,7 +396,7 @@ ul.pager li:last-child {
   padding: 0.5em 0;
 }
 .archives .recent-posts li .date {
-  font-size: 14.4px;
+  font-size: 0.8em;
   color: #b3b3b3;
 }
 .archives .recent-posts a {
@@ -407,23 +412,23 @@ article {
 }
 article .published {
   text-align: center;
-  font-size: 13.5px;
+  font-size: 0.75em;
   color: #8c8c8c;
 }
 article .published .date {
   display: inline-block;
   background: #fff;
   position: relative;
-  top: -10.125px;
+  top: -0.5625em;
   padding: 0 0.5em;
 }
 article header {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 27px;
+  margin-bottom: 1.5em;
 }
 article header h1 {
-  font-size: 27px;
+  font-size: 1.5em;
   font-weight: 400;
 }
 article header h1 a {
@@ -436,14 +441,14 @@ article header h1 a:hover {
 article header .byline {
   font-style: italic;
   color: #8c8c8c;
-  font-size: 13.5px;
+  font-size: 0.75em;
 }
 article code {
   font-size: 0.8em;
 }
 footer {
   text-align: center;
-  font-size: 13.5px;
+  font-size: 0.75em;
   color: #8c8c8c;
   border-top: 1px solid #c8c8c8;
   padding: 2em 0;
