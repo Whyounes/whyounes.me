@@ -13,12 +13,20 @@
         <header>
             <h1>{{ link_to_route('home', 'adamwathan.me') }}</h1>
         </header>
-        <nav>
-            <ul>
-                <li>{{ link_to_route('about', 'About') }}</li>
-                <li>{{ link_to_route('archives', 'Archives') }}</li>
-                <li>{{ link_to_route('talks', 'Talks') }}</li>
-                <li>{{ link_to('http://fullstackradio.com', 'Podcast') }}</li>
+        <nav class="siteNav">
+            <ul class="horizontalNav">
+                <li class="horizontalNav-item">
+                    {{ link_to_route('about', 'About', [], ['class' => 'siteNav-link']) }}
+                </li>
+                <li class="horizontalNav-item">
+                    {{ link_to_route('archives', 'Archives', [], ['class' => 'siteNav-link']) }}
+                </li>
+                <li class="horizontalNav-item">
+                    {{ link_to_route('talks', 'Talks', [], ['class' => 'siteNav-link']) }}
+                </li>
+                <li class="horizontalNav-item">
+                    {{ link_to('http://fullstackradio.com', 'Podcast', ['class' => 'siteNav-link']) }}
+                </li>
             </ul>
         </nav>
         <aside id="site-description">

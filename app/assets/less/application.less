@@ -39,6 +39,10 @@
 @base-size: 1em;
 @font-size-small: @base-size * 0.8;
 
+// Screen sizes
+@desktop: 768px;
+
+
 // Styles
 body {
     background-color: @background-color;
@@ -46,7 +50,7 @@ body {
     font: 400 14px/1.6 @base-font, Georgia, serif;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @desktop) {
     body { font-size: 18px; }
 }
 
@@ -86,32 +90,36 @@ header {
     }
 }
 
-nav {
+.horizontalNav {
+    .center;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.horizontalNav-item {
+    display: inline;
+    margin-right: 1em;
+    @media (min-width: @desktop) {
+        margin-right: 2em;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.siteNav {
     text-transform: uppercase;
     border-top: 1px solid @separator-color;
     border-bottom: 1px solid @separator-color;
-    ul {
-        .center;
-        text-align: center;
-        list-style-type: none;
-        padding: 0;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-    }
-    li {
-        display: inline;
-        margin-right: 40px;
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-    a {
-        text-decoration: none;
-        color: @light-color;
-        &:hover {
-            text-decoration: underline;
-            color: @base-color;
-        }
+}
+.siteNav-link {
+    text-decoration: none;
+    color: @light-color;
+    &:hover {
+        text-decoration: underline;
+        color: @base-color;
     }
 }
 
