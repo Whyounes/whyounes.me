@@ -36,7 +36,7 @@ class MarkdownPostCompiler implements PostCompilerInterface
 	private function parseKeyValue($pair)
 	{
 		$matches = array();
-		$pattern = '/^(.+):\s+(.+)$/';
+		$pattern = '/^(.+?):\s+(.+)$/';
 		preg_match($pattern, $pair, $matches);
 
 		if(count($matches)) {
