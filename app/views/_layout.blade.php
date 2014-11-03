@@ -18,6 +18,7 @@
                 <li>{{ link_to_route('about', 'About') }}</li>
                 <li>{{ link_to_route('archives', 'Archives') }}</li>
                 <li>{{ link_to_route('talks', 'Talks') }}</li>
+                <li>{{ link_to('http://fullstackradio.com', 'Podcast') }}</li>
             </ul>
         </nav>
         <aside id="site-description">
