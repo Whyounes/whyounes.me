@@ -18,7 +18,6 @@
 
 .content-section {
     border-top: 1px solid @separator-color;
-    padding-bottom: 3em;
     h1 {
         font-size: @base-size * 1.5;
         text-align: center;
@@ -242,10 +241,14 @@ article {
 }
 
 footer {
+    border-top: 1px solid darken(@separator-color, 10%);
+    margin-top: 3em;
+}
+
+.footer-content {
     text-align: center;
     font-size: @base-size * 0.75;
     color: @light-color;
-    border-top: 1px solid darken(@separator-color, 10%);
     padding: 2em 0;
     a {
         text-decoration: none;
@@ -257,6 +260,9 @@ footer {
     }
 }
 
+.talk {
+    margin-bottom: 2em;
+}
 .talk-video {
     position: relative;
     padding-bottom: 75%;

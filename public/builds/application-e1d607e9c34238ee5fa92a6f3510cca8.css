@@ -245,7 +245,6 @@ table {
 }
 .content-section {
   border-top: 1px solid #e1e1e1;
-  padding-bottom: 3em;
 }
 .content-section h1 {
   font-size: 1.5em;
@@ -377,7 +376,6 @@ ul.pager li:last-child {
 }
 .about {
   border-top: 1px solid #e1e1e1;
-  padding-bottom: 3em;
 }
 .about h1 {
   font-size: 1.5em;
@@ -385,7 +383,6 @@ ul.pager li:last-child {
 }
 .archives {
   border-top: 1px solid #e1e1e1;
-  padding-bottom: 3em;
 }
 .archives h1 {
   font-size: 1.5em;
@@ -452,19 +449,25 @@ article code {
   font-size: 0.8em;
 }
 footer {
+  border-top: 1px solid #c8c8c8;
+  margin-top: 3em;
+}
+.footer-content {
   text-align: center;
   font-size: 0.75em;
   color: #8c8c8c;
-  border-top: 1px solid #c8c8c8;
   padding: 2em 0;
 }
-footer a {
+.footer-content a {
   text-decoration: none;
   color: #9C8A6A;
 }
-footer a:hover {
+.footer-content a:hover {
   color: #333333;
   text-decoration: underline;
+}
+.talk {
+  margin-bottom: 2em;
 }
 .talk-video {
   position: relative;
