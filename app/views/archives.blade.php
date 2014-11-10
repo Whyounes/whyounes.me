@@ -1,7 +1,7 @@
 @extends('_layout')
 
 @section('content')
-<div class="archives">
+<div class="archives contentSection">
 	<header>
 		<h1>Archives</h1>
 	</header>

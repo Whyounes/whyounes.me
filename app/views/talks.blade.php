@@ -1,7 +1,7 @@
 @extends('_layout')
 
 @section('content')
-<div class="content-section">
+<div class="contentSection">
     <h1>Talks</h1>
 
     <div class="talk">

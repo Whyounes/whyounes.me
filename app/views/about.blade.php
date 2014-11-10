@@ -1,7 +1,7 @@
 @extends('_layout')
 
 @section('content')
-<div class="about">
+<div class="contentSection">
     <h1>About</h1>
     <p>I build web applications at <a href="http://boltmade.com">Boltmade</a> in Waterloo by day, and <a href="http://www.youtube.com/watch?v=2-J-DCbsQzo">lift heavy things competitively</a> by night.</p>
 

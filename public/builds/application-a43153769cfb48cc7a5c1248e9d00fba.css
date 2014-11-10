@@ -243,21 +243,22 @@ table {
 .text-center {
   text-align: center;
 }
-.content-section {
+.contentSection {
   border-top: 1px solid #e1e1e1;
 }
-.content-section h1 {
+.contentSection h1 {
   font-size: 1.5em;
   text-align: center;
 }
 body {
   background-color: #fff;
-  color: #333333;
-  font: 400 14px/1.6 'palatino', Georgia, serif;
+  color: rgba(0,0,0,0.8);
+  font: 400 14px/1.5 'palatino', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
 }
 @media (min-width: 768px) {
   body {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 h1,
@@ -266,7 +267,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 800;
+  font-family: 'Lato';
 }
 a {
   color: #428bca;
@@ -285,16 +287,18 @@ a:hover {
   padding-left: 15px;
   padding-right: 15px;
 }
-header h1 {
+.siteHeader-title {
   font-size: 2.5em;
+  font-family: 'palatino';
+  font-weight: 400;
   text-align: center;
   margin-bottom: 0.25em;
 }
-header h1 a {
+.siteHeader-title a {
   text-decoration: none;
-  color: #333333;
+  color: rgba(0,0,0,0.8);
 }
-header h1 a:hover {
+.siteHeader-title a:hover {
   text-decoration: underline;
 }
 .horizontalNav {
@@ -325,14 +329,14 @@ header h1 a:hover {
 }
 .siteNav-link {
   text-decoration: none;
-  color: #8c8c8c;
+  color: rgba(89,89,89,0.8);
 }
 .siteNav-link:hover {
   text-decoration: underline;
-  color: #333333;
+  color: rgba(0,0,0,0.8);
 }
-#site-description {
-  color: #8c8c8c;
+.siteDescription {
+  color: rgba(89,89,89,0.8);
   font-style: italic;
   font-size: 0.8em;
   margin-top: 2em;
@@ -344,7 +348,6 @@ blockquote {
   border-left: 2px solid #ccc;
   margin-left: 0;
   padding-left: 40px;
-  color: #333;
 }
 ul.pager {
   list-style-type: none;
@@ -358,11 +361,11 @@ ul.pager .disabled {
 }
 ul.pager a {
   text-decoration: none;
-  color: #8c8c8c;
+  color: rgba(89,89,89,0.8);
 }
 ul.pager a:hover {
   text-decoration: underline;
-  color: #666666;
+  color: rgba(51,51,51,0.8);
 }
 ul.pager li {
   float: left;
@@ -375,24 +378,10 @@ ul.pager li:last-child {
   padding: 2em;
 }
 .comments-link a {
-  color: #b3b3b3;
+  color: rgba(128,128,128,0.8);
 }
 .comments-link a:hover {
-  color: #8c8c8c;
-}
-.about {
-  border-top: 1px solid #e1e1e1;
-}
-.about h1 {
-  font-size: 1.5em;
-  text-align: center;
-}
-.archives {
-  border-top: 1px solid #e1e1e1;
-}
-.archives h1 {
-  font-size: 1.5em;
-  text-align: center;
+  color: rgba(89,89,89,0.8);
 }
 .archives .recent-posts ul {
   list-style-type: none;
@@ -405,55 +394,54 @@ ul.pager li:last-child {
 }
 .archives .recent-posts li .date {
   font-size: 0.8em;
-  color: #b3b3b3;
+  color: rgba(128,128,128,0.8);
 }
 .archives .recent-posts a {
-  color: #428bca;
+  color: rgba(0,0,0,0.8);
   text-decoration: none;
 }
 .archives .recent-posts a:hover {
-  color: #333333;
+  color: rgba(0,0,0,0.8);
   text-decoration: underline;
 }
-article {
+.blogPost {
   border-top: 1px solid #e1e1e1;
 }
-article .published {
+.blogPost-published {
   text-align: center;
   font-size: 0.75em;
-  color: #8c8c8c;
+  color: rgba(89,89,89,0.8);
 }
-article .published .date {
+.blogPost-published-date {
   display: inline-block;
   background: #fff;
   position: relative;
   top: -0.5625em;
   padding: 0 0.5em;
 }
-article header {
+.blogPost code {
+  font-size: 0.8em;
+}
+.blogPost-header {
   text-align: center;
   margin-top: 0;
   margin-bottom: 1.5em;
 }
-article header h1 {
+.blogPost-header-title {
   font-size: 1.5em;
-  font-weight: 400;
 }
-article header h1 a {
+.blogPost-header-title a {
   text-decoration: none;
-  color: #333333;
+  color: rgba(0,0,0,0.8);
 }
-article header h1 a:hover {
-  color: #0d0d0d;
+.blogPost-header-title a:hover {
+  color: rgba(0,0,0,0.8);
   text-decoration: underline;
 }
-article header .byline {
+.blogPost-header-byline {
   font-style: italic;
-  color: #8c8c8c;
+  color: rgba(89,89,89,0.8);
   font-size: 0.75em;
-}
-article code {
-  font-size: 0.8em;
 }
 footer {
   border-top: 1px solid #c8c8c8;
@@ -462,7 +450,7 @@ footer {
 .footer-content {
   text-align: center;
   font-size: 0.75em;
-  color: #8c8c8c;
+  color: rgba(89,89,89,0.8);
   padding: 2em 0;
 }
 .footer-content a {
@@ -470,7 +458,7 @@ footer {
   color: #428bca;
 }
 .footer-content a:hover {
-  color: #333333;
+  color: rgba(0,0,0,0.8);
   text-decoration: underline;
 }
 .talk {

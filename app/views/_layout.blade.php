@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     @stylesheets('application')
     {{ HTML::style('/css/prism.css') }}
     <title>{{ $title }}</title>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>{{ link_to_route('home', 'adamwathan.me') }}</h1>
+        <header class="siteHeader">
+            <h1 class="siteHeader-title">{{ link_to_route('home', 'adamwathan.me') }}</h1>
         </header>
         <nav class="siteNav">
             <ul class="horizontalNav">
@@ -29,7 +30,7 @@
                 </li>
             </ul>
         </nav>
-        <aside id="site-description">
+        <aside class="siteDescription">
             Thoughts on modern web application development.
         </aside>
         <section>
