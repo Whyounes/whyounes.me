@@ -31,7 +31,7 @@
 @light-color: lighten(@base-color, 35%);
 @lighter-color: lighten(@base-color, 50%);
 @separator-color: rgb(225,225,225);
-@link-color: #9C8A6A;
+@link-color: #428bca;
 
 // Fonts
 @base-font: 'palatino';
@@ -60,7 +60,7 @@ a {
     color: @link-color;
     text-decoration: none;
     &:hover {
-        color: @base-color;
+        .hover-link(@link-color);
         text-decoration: underline;
     }
 }
@@ -150,10 +150,10 @@ ul.pager {
     }
     a {
         text-decoration: none;
-        color: @link-color;
+        color: @light-color;
         &:hover {
             text-decoration: underline;
-            color: @base-color;
+            .hover-link(@light-color);
         }
     }
     li {
@@ -164,9 +164,20 @@ ul.pager {
     }
 }
 
+.hover-link(@color) {
+    color: darken(@color, 15);
+}
+
+
 .comments-link {
     text-align: center;
     padding: 2em;
+    a {
+        color: @lighter-color;
+        &:hover {
+            .hover-link(@lighter-color);
+        }
+    }
 }
 
 .about {
@@ -225,6 +236,7 @@ article {
                 text-decoration: none;
                 color: @base-color;
                 &:hover {
+                    .hover-link(@base-color);
                     text-decoration: underline;
                 }
             }

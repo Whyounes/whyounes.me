@@ -269,11 +269,11 @@ h6 {
   font-weight: 400;
 }
 a {
-  color: #9C8A6A;
+  color: #428bca;
   text-decoration: none;
 }
 a:hover {
-  color: #333333;
+  color: #2a6496;
   text-decoration: underline;
 }
 .container {
@@ -351,18 +351,18 @@ ul.pager {
   padding: 2em 0;
   margin: 0;
   border-top: 1px solid #e1e1e1;
-  color: #9C8A6A;
+  color: #428bca;
 }
 ul.pager .disabled {
   visibility: hidden;
 }
 ul.pager a {
   text-decoration: none;
-  color: #9C8A6A;
+  color: #8c8c8c;
 }
 ul.pager a:hover {
   text-decoration: underline;
-  color: #333333;
+  color: #666666;
 }
 ul.pager li {
   float: left;
@@ -373,6 +373,12 @@ ul.pager li:last-child {
 .comments-link {
   text-align: center;
   padding: 2em;
+}
+.comments-link a {
+  color: #b3b3b3;
+}
+.comments-link a:hover {
+  color: #8c8c8c;
 }
 .about {
   border-top: 1px solid #e1e1e1;
@@ -402,7 +408,7 @@ ul.pager li:last-child {
   color: #b3b3b3;
 }
 .archives .recent-posts a {
-  color: #9C8A6A;
+  color: #428bca;
   text-decoration: none;
 }
 .archives .recent-posts a:hover {
@@ -438,6 +444,7 @@ article header h1 a {
   color: #333333;
 }
 article header h1 a:hover {
+  color: #0d0d0d;
   text-decoration: underline;
 }
 article header .byline {
@@ -460,7 +467,7 @@ footer {
 }
 .footer-content a {
   text-decoration: none;
-  color: #9C8A6A;
+  color: #428bca;
 }
 .footer-content a:hover {
   color: #333333;
