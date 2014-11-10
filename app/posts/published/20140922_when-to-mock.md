@@ -11,7 +11,7 @@ Test doubles come in a ton of different flavors.
 
 But I don't think it needs to be this complicated. In my mind, there's really only two categories of test doubles.
 
-### Stubs / Simple doubles
+### Stubs &rarr; Simple doubles
 
 Any test double that just sits in for a collaborator and returns canned results is firmly in the *stub* category.
 
@@ -21,7 +21,7 @@ Any test double that just sits in for a collaborator and returns canned results 
 
 A stub can do nothing but provide indirect input to your test.
 
-### Mocks / Observable doubles
+### Mocks &rarr; Observable doubles
 
 A test double that allows you to observe its behavior is a mock. *Mocks* and *spies* both fall into to this category.
 
@@ -37,7 +37,7 @@ Understanding when you need to set a mock expectation comes down to understandin
 
 **Queries** are messages that return a result and don't affect the state of the system. Think of queries as *asking a question*.
 
-If I have an `Order`, I should be able to ask it for its `totalPrice()` as many times as I want without affecting the system. It's not going to create an entry in the database, or send someone an email. Query messages just answer a question, they don't have any side effects.
+If I have an `Order`, I should be able to ask it for its `totalPrice()` as many times as I want without affecting the system. It's not going to create an entry in the database, or send someone an email. Query messages just answer a question; they don't have any side effects.
 
 **Commands** are messages that invoke an action, and they shouldn't return a meaningful value. Think of commands as *giving an instruction*.
 
@@ -55,7 +55,7 @@ We only care that `totalPrice()` returns the price we expect. *How* it gets the 
 
 So if you're doubling a collaborator that needs to answer questions, just *stub* those methods, don't set mock expectations.
 
-## Mock commands
+## Do mock commands
 
 Only set a mock expectation when you really need to prove that a particular message is being sent.
 
