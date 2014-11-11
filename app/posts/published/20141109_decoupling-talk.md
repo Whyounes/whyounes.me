@@ -11,4 +11,4 @@ This weekend I had the opportunity to give two talks at the TrueNorthPHP confere
     <iframe src="//player.vimeo.com/video/111338686" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
-Slides available here: [https://speakerdeck.com/adamwathan/decoupling-packages-from-your-framework](https://speakerdeck.com/adamwathan/decoupling-packages-from-your-framework)
+Slides available on [Speakerdeck.](https://speakerdeck.com/adamwathan/decoupling-packages-from-your-framework)
