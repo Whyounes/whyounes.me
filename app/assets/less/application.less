@@ -5,6 +5,35 @@
 @import "bootstrap/normalize.less";
 @import "bootstrap/print.less";
 
+// Variables
+@background-color: #fff;
+@page-width: 36em;
+@base-color: rgba(0, 0, 0, 0.8);
+@light-color: lighten(@base-color, 35%);
+@lighter-color: lighten(@base-color, 50%);
+@separator-color: rgb(225,225,225);
+@link-color: #428bca;
+
+// Fonts
+@sans-font: 'Lato', 'Lucida Grande', sans-serif;
+@serif-font: 'palatino', Georgia, serif;
+@base-font: @sans-font;
+@base-size: 1em;
+@body-font: @serif-font;
+@siteHeader-font: @sans-font;
+
+@headings-font: @sans-font;
+@headings-font-weight: 800;
+@fontSize-smaller: 0.75em;
+@fontSize-small: 0.85em;
+@fontSize-base: 1em;
+@fontSize-large: 1.5em;
+@fontSize-larger: 2em;
+@fontSize-jumbo: 2.5em;
+
+// Screen sizes
+@desktop: 768px;
+
 
 // Mixins
 .center {
@@ -19,35 +48,17 @@
 .contentSection {
     border-top: 1px solid @separator-color;
     h1 {
-        font-size: @base-size * 1.5;
+        font-size: @fontSize-large;
         text-align: center;
     }
 }
-
-// Variables
-@background-color: #fff;
-@page-width: 36em;
-@base-color: rgba(0, 0, 0, 0.8);
-@light-color: lighten(@base-color, 35%);
-@lighter-color: lighten(@base-color, 50%);
-@separator-color: rgb(225,225,225);
-@link-color: #428bca;
-
-// Fonts
-@base-font: 'palatino';
-@headings-font: 'Lato';
-@base-size: 1em;
-@font-size-small: @base-size * 0.8;
-
-// Screen sizes
-@desktop: 768px;
 
 
 // Styles
 body {
     background-color: @background-color;
     color: @base-color;
-    font: 400 14px/1.5 @base-font, Georgia, serif;
+    font: 400 14px/1.5 @base-font;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -56,7 +67,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 800;
+    font-weight: @headings-font-weight;
     font-family: @headings-font;
 }
 a {
@@ -79,9 +90,9 @@ a {
 
 .siteHeader {
     &-title {
-        font-size: @base-size * 2.5;
-        font-family: @base-font;
-        font-weight: 400;
+        font-size: @fontSize-jumbo;
+        font-family: @siteHeader-font;
+        font-weight: 500;
         text-align: center;
         margin-bottom: 0.25em;
         a {
@@ -93,6 +104,33 @@ a {
         }
     }
 }
+
+.siteNav {
+    font-family: @siteHeader-font;
+    font-size: @fontSize-small;
+    text-transform: uppercase;
+    border-top: 1px solid @separator-color;
+    border-bottom: 1px solid @separator-color;
+}
+.siteNav-link {
+    text-decoration: none;
+    color: @light-color;
+    &:hover {
+        text-decoration: underline;
+        color: @base-color;
+    }
+}
+
+.siteDescription {
+    color: @light-color;
+    font-family: @siteHeader-font;
+    font-style: italic;
+    font-size: @fontSize-base * 0.8;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
 
 .horizontalNav {
     .center;
@@ -113,28 +151,6 @@ a {
     }
 }
 
-.siteNav {
-    text-transform: uppercase;
-    border-top: 1px solid @separator-color;
-    border-bottom: 1px solid @separator-color;
-}
-.siteNav-link {
-    text-decoration: none;
-    color: @light-color;
-    &:hover {
-        text-decoration: underline;
-        color: @base-color;
-    }
-}
-
-.siteDescription {
-    color: @light-color;
-    font-style: italic;
-    font-size: @font-size-small;
-    margin-top: 2em;
-    margin-bottom: 3em;
-    text-align: center;
-}
 
 blockquote {
     font-style: italic;
@@ -144,8 +160,9 @@ blockquote {
 }
 
 ul.pager {
+    .clearfix();
     list-style-type: none;
-    padding: 2em 0;
+    padding: 0.5em 0 0;
     margin: 0;
     border-top: 1px solid @separator-color;
     color: @link-color;
@@ -195,13 +212,14 @@ ul.pager {
             border-bottom: 1px solid @separator-color;
             padding: 0.5em 0;
             .date {
-                font-size: @font-size-small;
+                font-size: @fontSize-smaller;
                 color: @lighter-color;
             }
         }
         a {
             color: @base-color;
             text-decoration: none;
+            font-weight: 600;
             &:hover {
                 .hover-link(@base-color);
                 text-decoration: underline;
@@ -210,31 +228,35 @@ ul.pager {
     }
 }
 
+.bodyCopy {
+    font-family: @body-font;
+}
+
 .blogPost {
     border-top: 1px solid @separator-color;
     &-published {
         text-align: center;
-        font-size: @base-size * 0.75;
+        font-size: @fontSize-smaller;
         color: @light-color;
         &-date {
             display: inline-block;
             background: @background-color;
             position: relative;
-            top: -(@base-size * 0.75 * 1.5 / 2);
+            top: -0.75em;
             padding: 0 0.5em;
         }
     }
     code {
-        font-size: 0.8em;
+        font-size: @fontSize-smaller;
     }
 }
 
 .blogPost-header {
     text-align: center;
     margin-top: 0;
-    margin-bottom: @base-size * 1.5;
+    margin-bottom: @fontSize-large;
     &-title {
-        font-size: @base-size * 1.5;
+        font-size: @fontSize-large;
         a {
             text-decoration: none;
             color: @base-color;
@@ -247,7 +269,7 @@ ul.pager {
     &-byline {
         font-style: italic;
         color: @light-color;
-        font-size: @base-size * 0.75;
+        font-size: @fontSize-smaller;
     }
 }
 
@@ -258,7 +280,7 @@ footer {
 
 .footer-content {
     text-align: center;
-    font-size: @base-size * 0.75;
+    font-size: @fontSize-smaller;
     color: @light-color;
     padding: 2em 0;
     a {

@@ -4,7 +4,7 @@
 
 @if ($paginator->getLastPage() > 1)
 	<ul class="pager">
-		{{ $presenter->getNext('&laquo; Older') }}
-		{{ $presenter->getPrevious('Newer &raquo;') }}
+		{{ $presenter->getNext('&larr; Older') }}
+		{{ $presenter->getPrevious('Newer &rarr;') }}
 	</ul>
 @endif
