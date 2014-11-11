@@ -246,8 +246,9 @@ table {
 .contentSection {
   border-top: 1px solid #e1e1e1;
 }
-.contentSection h1 {
+.contentSection-heading {
   font-size: 1.5em;
+  font-weight: 600;
   text-align: center;
 }
 body {
@@ -443,7 +444,8 @@ ul.pager li:last-child {
   margin-bottom: 1.5em;
 }
 .blogPost-header-title {
-  font-size: 1.5em;
+  font-size: 2em;
+  font-weight: 800;
 }
 .blogPost-header-title a {
   text-decoration: none;

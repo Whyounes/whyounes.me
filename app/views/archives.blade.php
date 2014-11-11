@@ -3,7 +3,7 @@
 @section('content')
 <div class="archives contentSection">
 	<header>
-		<h1>Archives</h1>
+		<h1 class="contentSection-heading">Archives</h1>
 	</header>
 	<div class="recent-posts">
 		<ul>

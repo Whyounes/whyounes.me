@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="contentSection">
-    <h1>Talks</h1>
+    <h1 class="contentSection-heading">Talks</h1>
 
     <div class="talk">
         <div class="talk-video">
