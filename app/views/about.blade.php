@@ -3,7 +3,7 @@
 @section('content')
 <div class="contentSection">
     <h1 class="contentSection-heading">About</h1>
-    <p>I build web applications at <a href="http://boltmade.com">Boltmade</a> in Waterloo by day, and <a href="http://www.youtube.com/watch?v=2-J-DCbsQzo">lift heavy things competitively</a> by night.</p>
+    <p>I build web applications at <a href="http://tighten.co">Tighten Co</a> in Waterloo by day, and <a href="http://www.youtube.com/watch?v=2-J-DCbsQzo">lift heavy things competitively</a> by night.</p>
 
     <p>I also host the <a href="http://fullstackradio.com">Full Stack Radio</a> podcast, where I talk to other people in software industry about everything from CSS to unit testing.</p>
 
