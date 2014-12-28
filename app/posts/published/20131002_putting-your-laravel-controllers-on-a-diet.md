@@ -45,7 +45,7 @@ You give the account registration page to a co-worker to try out and that smarta
 *"Fuck, form validation..."*
 
 Next thing you know you end up with this:
- 
+
 ~~~language-php
 // UserController.php
 
@@ -76,7 +76,7 @@ public function store()
 
 	return View::make('account-created');
 }
-~~~ 
+~~~
 
 This sucks.
 
@@ -181,7 +181,7 @@ public function store()
 
 	return View::make('account-created');
 }
-~~~ 
+~~~
 
 Isn't that way better? If we want to get *really* crazy *(and you aren't one of those anti-active record purists)*, we could take it even further:
 

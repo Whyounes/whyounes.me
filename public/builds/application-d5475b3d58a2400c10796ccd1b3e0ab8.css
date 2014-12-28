@@ -438,6 +438,10 @@ ul.pager li:last-child {
 }
 .blogPost code {
   font-size: 0.75em;
+  white-space: pre;
+}
+.blogPost img {
+  max-width: 100%;
 }
 .blogPost-header {
   text-align: center;
