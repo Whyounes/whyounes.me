@@ -5,19 +5,19 @@ slug: test-coverage-code-climate-travis-ci
 date: 2014-12-28
 ---
 
-This weekend I decided to add test coverage analysis for a few of my projects. I was already using [Travis CI](http://travis-ci.org) for running my tests and [CodeClimate](http://codeclimate.com) for code quality analysis, so I thought I would try and set it up with the tools I was already using.
+This weekend I decided to add test coverage analysis for a few of my projects. I was already using [Travis CI](http://travis-ci.org) for running my tests and [Code Climate](http://codeclimate.com) for code quality analysis, so I thought I would try and set it up with the tools I was already using.
 
 If you're unfamiliar, test coverage analysis just tells you what percentage of your code is actually executed when you run your test suite. It's not necessarily an indicator that your tests are any good, but it can be helpful for tracking down untested code.
 
-CodeClimate and Travis CI both have documentation for setting this up, but both of them left out enough important steps, or were just wrong in enough ways that I thought I'd go over what I had to do to actually get it working.
+Code Climate and Travis CI both have documentation for setting this up, but both of them left out enough important steps, or were just wrong in enough ways that I thought I'd go over what I had to do to actually get it working.
 
-### 1. Find your CodeClimate repository token
+### 1. Find your Code Climate repository token
 
-This is literally all you need to do with CodeClimate.
+This is literally all you need to do with Code Climate.
 
-Open your repository in CodeClimate and look for the button in the right hand column that says *"Set Up Test Coverage"*:
+Open your repository in Code Climate and look for the button in the right hand column that says *"Set Up Test Coverage"*:
 
-![CodeClimate Set Up Test Coverage](/img/codeclimate-setup-coverage.png)
+![Code Climate Set Up Test Coverage](/img/codeclimate-setup-coverage.png)
 
 This will take you to an instructions page where you'll find your token, which is buried in the instruction steps.
 
@@ -29,7 +29,7 @@ $ CODECLIMATE_REPO_TOKEN=y0ur53cr37t0k3n
 
 You want to grab everything after the equals sign and keep it handy.
 
-### 2. Add your CodeClimate repository token to Travis CI
+### 2. Add your Code Climate repository token to Travis CI
 
 This is where the other instructions start getting things wrong. Even the docs at Travis CI will tell you to add this to your `.travis.yml` file.
 
@@ -63,11 +63,11 @@ Add this section to your `phpunit.xml`:
 </phpunit>
 ~~~
 
-If you want to try this locally, you'll need XDebug installed. Neither CodeClimate or Travis CI mention this in their docs :)
+If you want to try this locally, you'll need XDebug installed. Neither Code Climate or Travis CI mention this in their docs :)
 
-### 5. Create a script for sending coverage information to CodeClimate
+### 5. Create a script for sending coverage information to Code Climate
 
-If you try to follow the CodeClimate or Travis CI instructions, you'll find that things just straight up don't work.
+If you try to follow the Code Climate or Travis CI instructions, you'll find that things just straight up don't work.
 
 After a bit of log diving, I found out it's because of [this SSL certificate error](https://github.com/codeclimate/php-test-reporter#known-issue-ssl-certificate-error).
 
@@ -96,7 +96,7 @@ chmod +x ./codeclimate.sh
 
 ### 6. Run the script after your tests finish
 
-Once your tests have finished running, you need to send that coverage report off to CodeClimate. That's what our `codeclimate.sh` script is for.
+Once your tests have finished running, you need to send that coverage report off to Code Climate. That's what our `codeclimate.sh` script is for.
 
 To run it after your tests, add it as an `after_script` to your `.travis.yml`. Here's what mine looks like:
 
