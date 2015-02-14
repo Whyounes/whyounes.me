@@ -469,8 +469,8 @@ ul.pager li:last-child {
   overflow-y: hidden;
 }
 .blogPost .line-numbers {
-  color: #aaaaaa;
-  font-size: 13px;
+  color: #bebebe;
+  font-size: 0.75em;
   line-height: 1.5;
   position: absolute;
   text-align: right;
