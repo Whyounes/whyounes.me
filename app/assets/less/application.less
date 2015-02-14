@@ -5,45 +5,28 @@
 @import "bootstrap/normalize.less";
 @import "bootstrap/print.less";
 
-// Variables
-@background-color: #fff;
-@page-width: 36em;
-@base-color: rgba(0, 0, 0, 0.8);
-@light-color: lighten(@base-color, 35%);
-@lighter-color: lighten(@base-color, 50%);
-@separator-color: rgb(225,225,225);
-@link-color: #428bca;
-
-// Fonts
-@sans-font: 'Lato', 'Lucida Grande', sans-serif;
-@serif-font: 'palatino', Georgia, serif;
-@base-font: @sans-font;
-@base-size: 1em;
-@body-font: @serif-font;
-@siteHeader-font: @sans-font;
-
-@headings-font: @sans-font;
-@headings-font-weight: 800;
-@fontSize-smaller: 0.7em;
-@fontSize-small: 0.85em;
-@fontSize-base: 1em;
-@fontSize-large: 1.5em;
-@fontSize-larger: 2em;
-@fontSize-jumbo: 2.5em;
-@fontSize-huge: 3em;
-
-// Screen sizes
-@desktop: 768px;
+@import "variables.less";
+@import "base.less";
+@import "blogPost.less";
+@import "talk.less";
+@import "siteHeader.less";
+@import "horizontalNav.less";
+@import "pagination.less";
 
 
 // Mixins
-.center {
+.center() {
     margin-left: auto;
     margin-right: auto;
 }
 
-.text-center {
-    text-align: center;
+.container {
+    .center();
+    box-sizing: border-box;
+    width: @page-width;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .contentSection {
@@ -56,136 +39,6 @@
 }
 
 
-// Styles
-body {
-    background-color: @background-color;
-    color: @base-color;
-    font: 400 14px/1.5 @base-font;
-    -webkit-font-smoothing: antialiased;
-}
-
-@media (min-width: @desktop) {
-    body { font-size: 20px; }
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: @headings-font-weight;
-    font-family: @headings-font;
-}
-a {
-    color: @link-color;
-    text-decoration: none;
-    &:hover {
-        .hover-link(@link-color);
-        text-decoration: underline;
-    }
-}
-
-.container {
-    .center;
-    box-sizing: border-box;
-    width: @page-width;
-    max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.siteHeader {
-    &-title {
-        font-size: @fontSize-jumbo;
-        font-family: @siteHeader-font;
-        font-weight: 500;
-        text-align: center;
-        margin-bottom: 0.25em;
-        a {
-            text-decoration: none;
-            color: @base-color;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-}
-
-.siteNav {
-    font-family: @siteHeader-font;
-    font-size: @fontSize-small;
-    text-transform: uppercase;
-    border-top: 1px solid @separator-color;
-    border-bottom: 1px solid @separator-color;
-}
-.siteNav-link {
-    text-decoration: none;
-    color: @light-color;
-    &:hover {
-        text-decoration: underline;
-        color: @base-color;
-    }
-}
-
-.siteDescription {
-    color: @light-color;
-    font-family: @siteHeader-font;
-    font-style: italic;
-    font-size: @fontSize-base * 0.8;
-    margin-top: 2em;
-    margin-bottom: 3em;
-    text-align: center;
-}
-
-
-.horizontalNav {
-    .center;
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-.horizontalNav-item {
-    display: inline;
-    margin-right: 1em;
-    @media (min-width: @desktop) {
-        margin-right: 2em;
-    }
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-
-blockquote {
-    font-style: italic;
-    border-left: 2px solid #ccc;
-    margin-left: 0;
-    padding-left: 1.8em;
-}
-
-ul.pager {
-    .clearfix();
-    list-style-type: none;
-    padding: 0.5em 0 0;
-    margin: 0;
-    border-top: 1px solid @separator-color;
-    color: @link-color;
-    .disabled {
-        visibility: hidden;
-    }
-    a {
-        text-decoration: none;
-        color: @light-color;
-        &:hover {
-            text-decoration: underline;
-            .hover-link(@light-color);
-        }
-    }
-    li {
-        float: left;
-        &:last-child {
-            float: right;
-        }
-    }
-}
 
 .hover-link(@color) {
     color: darken(@color, 15);
@@ -234,28 +87,6 @@ ul.pager {
     font-family: @body-font;
 }
 
-.blogPost {
-    border-top: 1px solid @separator-color;
-    margin-bottom: 4em;
-    &-published {
-        text-align: center;
-        font-size: @fontSize-smaller;
-        color: @light-color;
-        &-date {
-            display: inline-block;
-            background: @background-color;
-            position: relative;
-            top: -0.75em;
-            padding: 0 0.5em;
-        }
-    }
-}
-
-footer {
-    border-top: 1px solid darken(@separator-color, 10%);
-    margin-top: 3em;
-}
-
 .footer-content {
     text-align: center;
     font-size: @fontSize-smaller;
@@ -270,102 +101,3 @@ footer {
         }
     }
 }
-
-.talk {
-    margin-bottom: 2em;
-}
-.talk-video {
-    position: relative;
-    padding-bottom: 75%;
-    width: 100%;
-    > iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.blogPost-title {
-    margin-top: 0.75em;
-    margin-bottom: 1em;
-    font-size: @fontSize-jumbo;
-    font-weight: 800;
-    line-height: 1.1;
-    @media (min-width: @desktop) {
-        font-size: @fontSize-huge;
-    }
-    a {
-        text-decoration: none;
-        color: @base-color;
-        &:hover {
-            .hover-link(@base-color);
-            text-decoration: underline;
-        }
-    }
-}
-
-.blogPost {
-    &-body {
-        h2, h3 {
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-        }
-
-        > p {
-            margin-bottom: 30em / 22em;
-        }
-
-        code {
-            font-size: @fontSize-smaller;
-            white-space: pre;
-        }
-
-        img {
-            max-width: 100%;
-        }
-
-        p > code {
-            border-radius: 0;
-            background-color: #f9f2f4;
-            color: #c7254e;
-            font-size: 70%;
-            padding: 2px 4px;
-        }
-
-        pre {
-            background: none;
-            border: 1px solid rgb(221, 221, 221);
-            border-radius: 5px;
-            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: (30em/22em);
-            padding: 0;
-            > code {
-                background-color: rgb(255, 255, 255);
-                border-left: 3em solid rgb(240, 240, 240);
-                line-height: 1.5;
-                padding-left: 1.5em;
-                * {
-                    font-weight: normal !important;
-                }
-            }
-        }
-
-        pre {
-            position: relative;
-            overflow-y: hidden;
-        }
-
-        .line-numbers {
-            color: rgb(190, 190, 190);
-            font-size: @fontSize-smaller;
-            line-height: 1.5;
-            position: absolute;
-            text-align: right;
-            top: 0.5em;
-            width: 2em;
-        }
-    }
-}
-

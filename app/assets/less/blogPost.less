@@ -1,0 +1,97 @@
+.blogPost {
+    border-top: 1px solid @separator-color;
+    margin-bottom: 4em;
+    &-published {
+        text-align: center;
+        font-size: @fontSize-smaller;
+        color: @light-color;
+        &-date {
+            display: inline-block;
+            background: @background-color;
+            position: relative;
+            top: -0.75em;
+            padding: 0 0.5em;
+        }
+    }
+}
+
+.blogPost-title {
+    margin-top: 0.75em;
+    margin-bottom: 1em;
+    font-size: @fontSize-jumbo;
+    font-weight: 800;
+    line-height: 1.1;
+    @media (min-width: @desktop) {
+        font-size: @fontSize-huge;
+    }
+    a {
+        text-decoration: none;
+        color: @base-color;
+        &:hover {
+            .hover-link(@base-color);
+            text-decoration: underline;
+        }
+    }
+}
+
+.blogPost-body {
+    h2, h3 {
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    > p {
+        margin-bottom: 30em / 22em;
+    }
+
+    code {
+        font-size: @fontSize-smaller;
+        white-space: pre;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    p > code {
+        border-radius: 0;
+        background-color: #f9f2f4;
+        color: #c7254e;
+        font-size: 70%;
+        padding: 2px 4px;
+    }
+
+    pre {
+        background: none;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 5px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: (30em/22em);
+        padding: 0;
+        > code {
+            background-color: rgb(255, 255, 255);
+            border-left: 3em solid rgb(240, 240, 240);
+            line-height: 1.5;
+            padding-left: 1.5em;
+            * {
+                font-weight: normal !important;
+            }
+        }
+    }
+
+    pre {
+        position: relative;
+        overflow-y: hidden;
+    }
+
+    .line-numbers {
+        color: rgb(190, 190, 190);
+        font-size: @fontSize-smaller;
+        line-height: 1.5;
+        position: absolute;
+        text-align: right;
+        top: 0.5em;
+        width: 2em;
+    }
+}
+

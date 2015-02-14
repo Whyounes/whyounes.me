@@ -1,0 +1,43 @@
+// Styles
+html {
+    font-size: 87.5%;
+    @media (min-width: @desktop) {
+        font-size: 125%;
+    }
+}
+
+body {
+    background-color: @background-color;
+    color: @base-color;
+    font-weight: 400;
+    font-family: @base-font;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: @headings-font-weight;
+    font-family: @headings-font;
+}
+
+a {
+    color: @link-color;
+    text-decoration: none;
+    &:hover {
+        .hover-link(@link-color);
+        text-decoration: underline;
+    }
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 2px solid #ccc;
+    margin-left: 0;
+    padding-left: 1.8em;
+}
+
+footer {
+    border-top: 1px solid darken(@separator-color, 10%);
+    margin-top: 3em;
+}
