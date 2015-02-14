@@ -445,7 +445,10 @@ ul.pager li:last-child {
 }
 .blogPost p > code {
   border-radius: 0;
+  background-color: #f9f2f4;
+  color: #c7254e;
   font-size: 70%;
+  padding: 2px 4px;
 }
 .blogPost pre {
   background: none;
