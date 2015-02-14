@@ -436,28 +436,6 @@ ul.pager li:last-child {
   top: -0.75em;
   padding: 0 0.5em;
 }
-.blogPost-header {
-  margin-top: 2.25em;
-  margin-bottom: 3em;
-}
-.blogPost-header-title {
-  font-size: 3em;
-  font-weight: 800;
-  line-height: 1.1;
-}
-.blogPost-header-title a {
-  text-decoration: none;
-  color: rgba(0,0,0,0.8);
-}
-.blogPost-header-title a:hover {
-  color: rgba(0,0,0,0.8);
-  text-decoration: underline;
-}
-.blogPost-header-byline {
-  font-style: italic;
-  color: rgba(89,89,89,0.8);
-  font-size: 0.75em;
-}
 footer {
   border-top: 1px solid #c8c8c8;
   margin-top: 3em;
@@ -490,6 +468,26 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.blogPost-title {
+  margin-top: 0.75em;
+  margin-bottom: 1em;
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 1.1;
+}
+@media (min-width: 768px) {
+  .blogPost-title {
+    font-size: 3em;
+  }
+}
+.blogPost-title a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+}
+.blogPost-title a:hover {
+  color: rgba(0,0,0,0.8);
+  text-decoration: underline;
 }
 .blogPost-body h2,
 .blogPost-body h3 {

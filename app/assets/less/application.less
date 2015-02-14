@@ -251,29 +251,6 @@ ul.pager {
     }
 }
 
-.blogPost-header {
-    margin-top: @fontSize-huge * 0.75;
-    margin-bottom: @fontSize-huge;
-    &-title {
-        font-size: @fontSize-huge;
-        font-weight: 800;
-        line-height: 1.1;
-        a {
-            text-decoration: none;
-            color: @base-color;
-            &:hover {
-                .hover-link(@base-color);
-                text-decoration: underline;
-            }
-        }
-    }
-    &-byline {
-        font-style: italic;
-        color: @light-color;
-        font-size: @fontSize-smaller;
-    }
-}
-
 footer {
     border-top: 1px solid darken(@separator-color, 10%);
     margin-top: 3em;
@@ -307,6 +284,25 @@ footer {
         left: 0;
         width: 100%;
         height: 100%;
+    }
+}
+
+.blogPost-title {
+    margin-top: 0.75em;
+    margin-bottom: 1em;
+    font-size: @fontSize-jumbo;
+    font-weight: 800;
+    line-height: 1.1;
+    @media (min-width: @desktop) {
+        font-size: @fontSize-huge;
+    }
+    a {
+        text-decoration: none;
+        color: @base-color;
+        &:hover {
+            .hover-link(@base-color);
+            text-decoration: underline;
+        }
     }
 }
 
