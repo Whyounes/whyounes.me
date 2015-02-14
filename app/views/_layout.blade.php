@@ -44,6 +44,22 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+        $(function() {
+            var preElement = $('.js-blog-post-body pre').each(function (index) {
+                var lineNumbers = '<div class="line-numbers">';
+                var numberOfLines = $(this).find('code').html().split(/\n/).length - 1;
+
+                for (var i = 1; i <= numberOfLines; i++) {
+                    lineNumbers = lineNumbers + i.toString() + "\n";
+                }
+
+                lineNumbers = lineNumbers + '</div>';
+
+                $(this).append(lineNumbers);
+            });
+        });
+    </script>
     @yield('scripts')
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
