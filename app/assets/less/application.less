@@ -30,6 +30,7 @@
 @fontSize-large: 1.5em;
 @fontSize-larger: 2em;
 @fontSize-jumbo: 2.5em;
+@fontSize-huge: 3em;
 
 // Screen sizes
 @desktop: 768px;
@@ -248,63 +249,15 @@ ul.pager {
             padding: 0 0.5em;
         }
     }
-    code {
-        font-size: @fontSize-smaller;
-        white-space: pre;
-    }
-    img {
-        max-width: 100%;
-    }
-
-    p > code {
-        border-radius: 0;
-        background-color: #f9f2f4;
-        color: #c7254e;
-        font-size: 70%;
-        padding: 2px 4px;
-    }
-
-    pre {
-        background: none;
-        border: 1px solid rgb(221, 221, 221);
-        border-radius: 5px;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: (30em/22em);
-        padding: 0;
-        > code {
-            background-color: rgb(255, 255, 255);
-            border-left: 3em solid rgb(240, 240, 240);
-            line-height: 1.5;
-            padding-left: 1.5em;
-            * {
-                font-weight: normal !important;
-            }
-        }
-    }
-
-    pre {
-        position: relative;
-        overflow-y: hidden;
-    }
-
-    .line-numbers {
-        color: rgb(190, 190, 190);
-        font-size: @fontSize-smaller;
-        line-height: 1.5;
-        position: absolute;
-        text-align: right;
-        top: 0.5em;
-        width: 2em;
-    }
 }
 
 .blogPost-header {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: @fontSize-large;
+    margin-top: @fontSize-huge * 0.75;
+    margin-bottom: @fontSize-huge;
     &-title {
-        font-size: @fontSize-larger;
+        font-size: @fontSize-huge;
         font-weight: 800;
+        line-height: 1.1;
         a {
             text-decoration: none;
             color: @base-color;
@@ -362,6 +315,60 @@ footer {
         h2, h3 {
             margin-top: 1.5em;
             margin-bottom: 0.5em;
+        }
+
+        > p {
+            margin-bottom: 30em / 22em;
+        }
+
+        code {
+            font-size: @fontSize-smaller;
+            white-space: pre;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p > code {
+            border-radius: 0;
+            background-color: #f9f2f4;
+            color: #c7254e;
+            font-size: 70%;
+            padding: 2px 4px;
+        }
+
+        pre {
+            background: none;
+            border: 1px solid rgb(221, 221, 221);
+            border-radius: 5px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: (30em/22em);
+            padding: 0;
+            > code {
+                background-color: rgb(255, 255, 255);
+                border-left: 3em solid rgb(240, 240, 240);
+                line-height: 1.5;
+                padding-left: 1.5em;
+                * {
+                    font-weight: normal !important;
+                }
+            }
+        }
+
+        pre {
+            position: relative;
+            overflow-y: hidden;
+        }
+
+        .line-numbers {
+            color: rgb(190, 190, 190);
+            font-size: @fontSize-smaller;
+            line-height: 1.5;
+            position: absolute;
+            text-align: right;
+            top: 0.5em;
+            width: 2em;
         }
     }
 }

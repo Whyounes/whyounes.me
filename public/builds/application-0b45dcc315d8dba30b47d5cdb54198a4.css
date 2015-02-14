@@ -436,58 +436,14 @@ ul.pager li:last-child {
   top: -0.75em;
   padding: 0 0.5em;
 }
-.blogPost code {
-  font-size: 0.75em;
-  white-space: pre;
-}
-.blogPost img {
-  max-width: 100%;
-}
-.blogPost p > code {
-  border-radius: 0;
-  background-color: #f9f2f4;
-  color: #c7254e;
-  font-size: 70%;
-  padding: 2px 4px;
-}
-.blogPost pre {
-  background: none;
-  border: 1px solid #dddddd;
-  border-radius: 5px;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-  margin-bottom: 1.3636363636364em;
-  padding: 0;
-}
-.blogPost pre > code {
-  background-color: #ffffff;
-  border-left: 3em solid #f0f0f0;
-  line-height: 1.5;
-  padding-left: 1.5em;
-}
-.blogPost pre > code * {
-  font-weight: normal !important;
-}
-.blogPost pre {
-  position: relative;
-  overflow-y: hidden;
-}
-.blogPost .line-numbers {
-  color: #bebebe;
-  font-size: 0.75em;
-  line-height: 1.5;
-  position: absolute;
-  text-align: right;
-  top: 0.5em;
-  width: 2em;
-}
 .blogPost-header {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-top: 2.25em;
+  margin-bottom: 3em;
 }
 .blogPost-header-title {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 800;
+  line-height: 1.1;
 }
 .blogPost-header-title a {
   text-decoration: none;
@@ -539,4 +495,51 @@ footer {
 .blogPost-body h3 {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
+}
+.blogPost-body > p {
+  margin-bottom: 1.3636363636364em;
+}
+.blogPost-body code {
+  font-size: 0.75em;
+  white-space: pre;
+}
+.blogPost-body img {
+  max-width: 100%;
+}
+.blogPost-body p > code {
+  border-radius: 0;
+  background-color: #f9f2f4;
+  color: #c7254e;
+  font-size: 70%;
+  padding: 2px 4px;
+}
+.blogPost-body pre {
+  background: none;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1.3636363636364em;
+  padding: 0;
+}
+.blogPost-body pre > code {
+  background-color: #ffffff;
+  border-left: 3em solid #f0f0f0;
+  line-height: 1.5;
+  padding-left: 1.5em;
+}
+.blogPost-body pre > code * {
+  font-weight: normal !important;
+}
+.blogPost-body pre {
+  position: relative;
+  overflow-y: hidden;
+}
+.blogPost-body .line-numbers {
+  color: #bebebe;
+  font-size: 0.75em;
+  line-height: 1.5;
+  position: absolute;
+  text-align: right;
+  top: 0.5em;
+  width: 2em;
 }
