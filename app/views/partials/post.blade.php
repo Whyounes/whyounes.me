@@ -3,7 +3,7 @@
 	<header class="blogPost-header">
 		<h1 class="blogPost-header-title">{{ link_to_post($post) }}</h1>
 	</header>
-	<div class="blogPost-body bodyCopy">
+	<div class="blogPost-body bodyCopy js-blog-post-body">
 		{{ $post }}
 	</div>
 </article>

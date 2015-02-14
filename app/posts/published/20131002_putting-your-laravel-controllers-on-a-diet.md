@@ -93,21 +93,21 @@ So what can we do with this newfound knowledge? Well let's check out the control
 The first thing that sticks out to me is this whole validation section:
 
 ~~~language-php
-	$input = Input::all();
+$input = Input::all();
 
-	$rules = array (
-		'email' => array('required', 'email', 'unique:users'),
-		'password' => array('required', 'confirmed', 'min:6'),
-		'first_name' => array('required'),
-		'last_name' => array('required'),
-		'date_of_birth' => array('required', 'date'),
-	);
+$rules = array (
+	'email' => array('required', 'email', 'unique:users'),
+	'password' => array('required', 'confirmed', 'min:6'),
+	'first_name' => array('required'),
+	'last_name' => array('required'),
+	'date_of_birth' => array('required', 'date'),
+);
 
-	$validation = Validator::make($input, $rules);
+$validation = Validator::make($input, $rules);
 
-	if ($validation->fails()) {
-		return Redirect::to('/users/create')->withErrors($validation)->withInput();
-	}
+if ($validation->fails()) {
+	return Redirect::to('/users/create')->withErrors($validation)->withInput();
+}
 ~~~
 
 That's a lot of overhead to have to deal with in the controller. So let's think about what we're actually trying to do here...

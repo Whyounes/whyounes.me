@@ -7,7 +7,6 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     @stylesheets('application')
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <title>{{ $title }}</title>
 </head>
 <body>
@@ -41,7 +40,9 @@
             <p class="footer-content">&copy; Adam Wathan. Proudly built with <a href="http://laravel.com/">Laravel</a>.</p>
         </footer>
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    @yield('scripts')
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

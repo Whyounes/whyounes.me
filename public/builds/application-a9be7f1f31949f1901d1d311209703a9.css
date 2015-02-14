@@ -443,6 +443,40 @@ ul.pager li:last-child {
 .blogPost img {
   max-width: 100%;
 }
+.blogPost p > code {
+  border-radius: 0;
+  font-size: 70%;
+}
+.blogPost pre {
+  background: none;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1.3636363636364em;
+  padding: 0;
+}
+.blogPost pre > code {
+  background-color: #ffffff;
+  border-left: 3em solid #f0f0f0;
+  line-height: 1.5;
+  padding-left: 1.5em;
+}
+.blogPost pre > code * {
+  font-weight: normal !important;
+}
+.blogPost pre {
+  position: relative;
+  overflow-y: hidden;
+}
+.blogPost .line-numbers {
+  color: #aaaaaa;
+  font-size: 13px;
+  line-height: 1.5;
+  position: absolute;
+  text-align: right;
+  top: 0.5em;
+  width: 2em;
+}
 .blogPost-header {
   text-align: center;
   margin-top: 0;
