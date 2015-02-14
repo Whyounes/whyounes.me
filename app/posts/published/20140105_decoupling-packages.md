@@ -31,7 +31,9 @@ When I built this package, it was to use it in a Laravel project. So what's the 
 
 Well for getting old input, Laravel very conveniently provides this:
 
-`Session::oldInput($key)`
+~~~language-php
+Session::oldInput($key)
+~~~
 
 Perfect, right?
 
