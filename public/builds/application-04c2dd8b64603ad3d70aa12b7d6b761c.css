@@ -241,14 +241,14 @@ html {
 }
 @media (min-width: 768px) {
   html {
-    font-size: 125%;
+    font-size: 137.5%;
   }
 }
 body {
   background-color: #fff;
   color: rgba(0,0,0,0.8);
   font-weight: 400;
-  font-family: 'Lato', 'Lucida Grande', sans-serif;
+  font-family: 'Open Sans', 'Lucida Grande', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -259,7 +259,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  font-family: 'Lato', 'Lucida Grande', sans-serif;
+  font-family: 'Open Sans', 'Lucida Grande', 'Helvetica Neue', sans-serif;
 }
 a {
   color: #428bca;
@@ -301,11 +301,6 @@ footer {
   font-size: 2.5em;
   font-weight: 800;
   line-height: 1.1;
-}
-@media (min-width: 768px) {
-  .blogPost-title {
-    font-size: 3em;
-  }
 }
 .blogPost-title a {
   text-decoration: none;
@@ -383,8 +378,8 @@ footer {
   height: 100%;
 }
 .siteHeader-title {
-  font-size: 2.5em;
-  font-family: 'Lato', 'Lucida Grande', sans-serif;
+  font-size: 2em;
+  font-family: 'Open Sans', 'Lucida Grande', 'Helvetica Neue', sans-serif;
   font-weight: 500;
   text-align: center;
   margin-bottom: 0.25em;
@@ -397,7 +392,7 @@ footer {
   text-decoration: underline;
 }
 .siteNav {
-  font-family: 'Lato', 'Lucida Grande', sans-serif;
+  font-family: 'Open Sans', 'Lucida Grande', 'Helvetica Neue', sans-serif;
   font-size: 0.85em;
   text-transform: uppercase;
   border-top: 1px solid #e1e1e1;
@@ -413,7 +408,7 @@ footer {
 }
 .siteDescription {
   color: rgba(89,89,89,0.8);
-  font-family: 'Lato', 'Lucida Grande', sans-serif;
+  font-family: 'Open Sans', 'Lucida Grande', 'Helvetica Neue', sans-serif;
   font-style: italic;
   font-size: 0.8em;
   margin-top: 2em;
@@ -477,7 +472,7 @@ ul.pager li:last-child {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  width: 36em;
+  width: 31em;
   max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -523,7 +518,7 @@ ul.pager li:last-child {
   text-decoration: underline;
 }
 .bodyCopy {
-  font-family: 'palatino', Georgia, serif;
+  font-family: 'Linux Libertine', Charter, Georgia, Utopia, serif;
 }
 .footer-content {
   text-align: center;
