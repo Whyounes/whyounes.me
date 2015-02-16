@@ -28,8 +28,8 @@ $post->addComment($comment);
 $postRepository->save($post);
 ~~~
 
-The main difference here is that initially the comment would only be added *in memory*,
-and saving the post through the repository would cascade to the newly added comment.
+The main difference here is that initially the comment would only be associated with the post *in memory*,
+and saving the post through the repository would then save the comment and set any foreign keys.
 
 ## Active Record-backed Repositories
 
@@ -53,7 +53,7 @@ class PostRepository
 This breaks down really badly when you need to work with relationships.
 
 An Active Record `Post` has no `protected $comments = []` property.
-Adding a comment saves it to the database right away.
+Adding a comment saves it to the database right away. This is fundamental to how Active Record works.
 
 This leads people down the path of managing relationships using the repository:
 
@@ -65,7 +65,7 @@ This is a fundamentally flawed, leaky abstraction.
 
 Instead of just adding a comment to a post, you have to *explicitly* reach to the persistence layer to do it.
 
-So trying to move all database access to the repositories comes at the expense of the rest of your application needing to know that the only way to establish a relationship is through a repository.
+So trying to move all database access to the repositories comes at the expense of the rest of your application needing to know that the *only* way to establish a relationship is through a repository.
 
 You would *never* write code like this with a real Data Mapper implementation.
 
