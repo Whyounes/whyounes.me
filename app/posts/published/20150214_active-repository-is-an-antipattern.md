@@ -80,3 +80,15 @@ $post->addComment($comment);
 If you really need to separate your domain model from your persistence layer *(most projects I've worked on honestly haven't benefited from it)*,
 you are *much* better off using a real Data Mapper implementation than you are hiding record retrieval behind an Active Record-backed repository.
 
+## Tips for using Active Record well
+
+1. Keep all database access inside of your Active Record models. Don't call `$posts->comments()->save($comment)` outside of the Post class. Create a method like `addComment($comment)` that encapsulates it.
+
+2. Save right away. With Active Record, the database is always the source of truth.
+    
+    If you have a `promoteToAdmin()` method on your `User` class, it should invoke `save()` internally. Try to avoid explicitly saving outside of the model.
+
+3. Repositories can sometimes be useful for *retrieval only*. Active Record implementations usually use static methods to query the database, so sometimes it's helpful to wrap those methods to simplify testing.
+
+    If you choose to do this, don't think of it as "separating your database access from your domain logic", that's not what we're trying to do. Instead, just think of it as trying to improve the testability of static calls. Your models should still save themselves.
+
