@@ -41,7 +41,7 @@ If I have an `Order`, I should be able to ask it for its `totalPrice()` as many 
 
 **Commands** are messages that invoke an action, and they shouldn't return a meaningful value. Think of commands as *giving an instruction*.
 
-If I tell a `ShippingService` to ship an order, it might update the `date_shipped` field on that order to the current date and time. If I tell it to ship the same order again, that field is going to change accordingly. So our command message *does* have side effects, but we never cared about the return value.
+If I tell a `ShippingService` to ship an order, it might update the `date_shipped` field on that order to the current date and time. If I tell it to ship the same order again, that field is going to change accordingly. So our command message *does* have side effects, but we don't care about the return value.
 
 ## Don't mock queries
 
