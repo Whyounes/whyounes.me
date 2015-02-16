@@ -78,7 +78,7 @@ $post->addComment($comment);
 ~~~
 
 If you really need to separate your domain model from your persistence layer *(most projects I've worked on honestly haven't benefited from it)*,
-you are *much* better off using a real Data Mapper implementation than you are hiding record retrieval behind an Active Record-backed repository.
+you are *much* better off using a real Data Mapper implementation than you are pushing database access to an Active Record-backed repository.
 
 ## Tips for using Active Record well
 
