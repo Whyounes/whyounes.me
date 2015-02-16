@@ -15,7 +15,7 @@ class PostsController extends BaseController
 	{
 		$view = View::make('index');
 		$view->posts = $this->posts->all();
-		$view->title = 'adamwathan.me';
+		$view->title = 'Adam Wathan - Blog';
 		return $view;
 	}
 
@@ -31,15 +31,7 @@ class PostsController extends BaseController
 
 		$view = View::make('post');
 		$view->post = $post;
-		$view->title = $post->title . ' : adamwathan.me';
-		return $view;
-	}
-
-	public function showArchives()
-	{
-		$view = View::make('archives');
-		$view->posts = $this->posts->all();
-		$view->title = 'Archives : adamwathan.me';
+		$view->title = $post->title . ' : Adam Wathan';
 		return $view;
 	}
 
