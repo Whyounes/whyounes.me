@@ -420,7 +420,7 @@ footer {
   font-weight: 700;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 0.25em;
+  margin-bottom: 0;
 }
 .siteHeader-title a {
   text-decoration: none;
@@ -443,6 +443,9 @@ footer {
 .siteNav-link:hover {
   text-decoration: underline;
   color: rgba(0, 0, 0, 0.8);
+}
+.socialLinks {
+  padding-bottom: 0.5em;
 }
 .horizontalNav {
   text-align: center;
@@ -524,11 +527,19 @@ ul.pager li:last-child {
   color: inherit;
   text-decoration: none;
 }
-.link--grey {
+.link--greyLight {
   color: rgba(204, 204, 204, 0.8);
   text-decoration: none;
 }
-.link--grey:hover {
+.link--greyLight:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+.link--greyMedium {
+  color: rgba(128, 128, 128, 0.8);
+  text-decoration: none;
+}
+.link--greyMedium:hover {
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }
