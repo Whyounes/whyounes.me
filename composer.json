@@ -12,9 +12,6 @@
 	"require": {
 		"laravel/framework": "4.0.*",
 		"michelf/php-markdown": "1.3.*@dev",
-		"jasonlewis/basset": "dev-master",
-		"leafo/lessphp": "0.4.0",
-		"jasonlewis/resource-watcher": "1.0.*",
 		"rtablada/wardrobe-disqus": "dev-master"
 	},
 	"autoload": {

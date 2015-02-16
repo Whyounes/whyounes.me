@@ -113,10 +113,8 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		
+
 		'AdamWathan\Blog\BlogServiceProvider',
-		'Basset\BassetServiceProvider',
-		'JasonLewis\ResourceWatcher\Integration\LaravelServiceProvider',
 		'Rtablada\WardrobeDisqus\WardrobeDisqusServiceProvider'
 	),
 
@@ -183,7 +181,6 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 
-		'Basset' => 'Basset\Facade',
 		'Disqus' => 'Rtablada\WardrobeDisqus\Facades\Disqus'
 	),
 

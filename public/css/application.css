@@ -1,3 +1,4 @@
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 article,
 aside,
 details,
@@ -54,7 +55,6 @@ dfn {
   font-style: italic;
 }
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -143,8 +143,6 @@ input[type="radio"] {
 }
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 input[type="search"]::-webkit-search-cancel-button,
@@ -245,8 +243,8 @@ html {
   }
 }
 body {
-  background-color: #fff;
-  color: rgba(0,0,0,0.8);
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
   font-family: 'Open Sans', 'Lucida Grande', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
@@ -286,11 +284,11 @@ footer {
 .blogPost-published {
   text-align: center;
   font-size: 0.7em;
-  color: rgba(89,89,89,0.8);
+  color: rgba(89, 89, 89, 0.8);
 }
 .blogPost-published-date {
   display: inline-block;
-  background: #fff;
+  background: #ffffff;
   position: relative;
   top: -0.75em;
   padding: 0 0.5em;
@@ -304,10 +302,10 @@ footer {
 }
 .blogPost-title a {
   text-decoration: none;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 .blogPost-title a:hover {
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: underline;
 }
 .blogPost-body h2,
@@ -316,7 +314,7 @@ footer {
   margin-bottom: 0.5em;
 }
 .blogPost-body > p {
-  margin-bottom: 1.3636363636364em;
+  margin-bottom: 1.36363636em;
 }
 .blogPost-body code {
   font-size: 0.7em;
@@ -336,8 +334,8 @@ footer {
   background: none;
   border: 1px solid #dddddd;
   border-radius: 5px;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-  margin-bottom: 1.3636363636364em;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.36363636em;
   padding: 0;
 }
 .blogPost-body pre > code {
@@ -386,7 +384,7 @@ footer {
 }
 .siteHeader-title a {
   text-decoration: none;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 .siteHeader-title a:hover {
   text-decoration: underline;
@@ -400,14 +398,14 @@ footer {
 }
 .siteNav-link {
   text-decoration: none;
-  color: rgba(89,89,89,0.8);
+  color: rgba(89, 89, 89, 0.8);
 }
 .siteNav-link:hover {
   text-decoration: underline;
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 .siteDescription {
-  color: rgba(89,89,89,0.8);
+  color: rgba(89, 89, 89, 0.8);
   font-family: 'Open Sans', 'Lucida Grande', 'Helvetica Neue', sans-serif;
   font-style: italic;
   font-size: 0.8em;
@@ -446,7 +444,9 @@ ul.pager {
 ul.pager:before,
 ul.pager:after {
   content: " ";
+  /* 1 */
   display: table;
+  /* 2 */
 }
 ul.pager:after {
   clear: both;
@@ -456,11 +456,11 @@ ul.pager .disabled {
 }
 ul.pager a {
   text-decoration: none;
-  color: rgba(89,89,89,0.8);
+  color: rgba(89, 89, 89, 0.8);
 }
 ul.pager a:hover {
   text-decoration: underline;
-  color: rgba(51,51,51,0.8);
+  color: rgba(51, 51, 51, 0.8);
 }
 ul.pager li {
   float: left;
@@ -490,10 +490,10 @@ ul.pager li:last-child {
   padding: 2em;
 }
 .comments-link a {
-  color: rgba(128,128,128,0.8);
+  color: rgba(128, 128, 128, 0.8);
 }
 .comments-link a:hover {
-  color: rgba(89,89,89,0.8);
+  color: rgba(89, 89, 89, 0.8);
 }
 .archives .recent-posts ul {
   list-style-type: none;
@@ -506,15 +506,15 @@ ul.pager li:last-child {
 }
 .archives .recent-posts li .date {
   font-size: 0.7em;
-  color: rgba(128,128,128,0.8);
+  color: rgba(128, 128, 128, 0.8);
 }
 .archives .recent-posts a {
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   font-weight: 600;
 }
 .archives .recent-posts a:hover {
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: underline;
 }
 .bodyCopy {
@@ -523,7 +523,7 @@ ul.pager li:last-child {
 .footer-content {
   text-align: center;
   font-size: 0.7em;
-  color: rgba(89,89,89,0.8);
+  color: rgba(89, 89, 89, 0.8);
   padding: 2em 0;
 }
 .footer-content a {
@@ -531,6 +531,6 @@ ul.pager li:last-child {
   color: #428bca;
 }
 .footer-content a:hover {
-  color: rgba(0,0,0,0.8);
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: underline;
 }

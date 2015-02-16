@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="alternate" type="application/rss+xml" title="adamwathan.me RSS Feed" href="/rss">
     <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:300,400,700/Linux+Libertine:400,400i,700,700i">
-    @stylesheets('application')
+    <link rel="stylesheet" href="{{ elixir('css/application.css') }}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
     <title>{{ $title }}</title>
 </head>

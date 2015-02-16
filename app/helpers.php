@@ -28,3 +28,20 @@ if ( ! function_exists('link_to_post'))
 		return app('html')->link($link, $title);
 	}
 }
+
+if (!function_exists('elixir')) {
+    function elixir($file)
+    {
+        static $manifest = null;
+
+        if (is_null($manifest)) {
+            $manifest = json_decode(file_get_contents(public_path() . '/build/rev-manifest.json'), true);
+        }
+
+        if (isset($manifest[$file])) {
+            return '/build/' . $manifest[$file];
+        }
+
+        throw new InvalidArgumentException("File {$file} not defined in asset manifest.");
+    }
+}
