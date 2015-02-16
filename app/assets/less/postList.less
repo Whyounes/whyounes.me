@@ -1,0 +1,22 @@
+.postList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.postList-item {
+    border-bottom: 1px solid @separator-color;
+    padding: 0.5em 0;
+    .date {
+        font-size: @fontSize-smaller;
+        color: @lighter-color;
+    }
+}
+.postList-link {
+    color: @base-color;
+    text-decoration: none;
+    font-weight: 600;
+    &:hover {
+        .hover-link(@base-color);
+        text-decoration: underline;
+    }
+}

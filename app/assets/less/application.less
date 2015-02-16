@@ -8,6 +8,7 @@
 @import "variables.less";
 @import "base.less";
 @import "blogPost.less";
+@import "postList.less";
 @import "talk.less";
 @import "siteHeader.less";
 @import "horizontalNav.less";
@@ -20,6 +21,65 @@
     margin-right: auto;
 }
 
+.u-textCenter {
+    text-align: center;
+}
+
+.u-padLeft {
+    margin-left: 0.5em;
+}
+
+.u-alignMiddle {
+    vertical-align: middle;
+}
+
+.img--circle {
+    border-radius: 50%;
+}
+
+.img--bordered {
+    border: 3px solid #fff;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.link--plain {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.avatar {
+    .img--circle;
+    display: inline-block;
+    background-image: url('https://avatars.githubusercontent.com/u/4323180?v=3&s=150');
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    @media (min-width: @desktop) {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.avatar--bordered {
+    .img--bordered;
+}
+
+.avatar--small {
+    width: 24px;
+    height: 24px;
+    @media (min-width: @desktop) {
+        width: 36px;
+        height: 36px;
+    }
+}
+
 .container {
     .center();
     box-sizing: border-box;
@@ -30,7 +90,6 @@
 }
 
 .contentSection {
-    border-top: 1px solid @separator-color;
     &-heading {
         font-size: @fontSize-large;
         font-weight: 600;
@@ -52,33 +111,6 @@
         color: @lighter-color;
         &:hover {
             .hover-link(@lighter-color);
-        }
-    }
-}
-
-.archives {
-    .recent-posts {
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        li {
-            border-bottom: 1px solid @separator-color;
-            padding: 0.5em 0;
-            .date {
-                font-size: @fontSize-smaller;
-                color: @lighter-color;
-            }
-        }
-        a {
-            color: @base-color;
-            text-decoration: none;
-            font-weight: 600;
-            &:hover {
-                .hover-link(@base-color);
-                text-decoration: underline;
-            }
         }
     }
 }

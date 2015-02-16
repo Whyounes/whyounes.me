@@ -1,8 +1,15 @@
 @extends('_layout')
 
 @section('content')
-@foreach($posts as $post)
-@include('partials.post')
-@endforeach
-{{ $posts->links() }}
+@include('partials.site-header')
+<div class="contentSection">
+    <ul class="postList">
+        @foreach($posts as $post)
+        <li class="postList-item">
+            <aside class="date">{{ date('F j, Y', strtotime($post->date)) }}</aside>
+            {{ link_to_post($post, null, ['class' => 'postList-link']) }}
+        </li>
+        @endforeach
+    </ul>
+</div>
 @stop

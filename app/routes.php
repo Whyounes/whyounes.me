@@ -2,7 +2,6 @@
 
 Route::get('/', ['as' => 'home', 'uses' => 'PostsController@showIndex']);
 Route::get('{year}/{month}/{day}/{slug}', ['as' => 'post', 'uses' => 'PostsController@showPost']);
-Route::get('archives', ['as' => 'archives', 'uses' => 'PostsController@showArchives']);
 Route::get('rss', ['as' => 'rss', 'uses' => 'PostsController@rss']);
 
 Route::get('about', ['as' => 'about', function() {

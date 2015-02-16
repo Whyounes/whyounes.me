@@ -1,6 +1,7 @@
 @extends('_layout')
 
 @section('content')
+@include('partials.site-header')
 <div class="contentSection">
     <h1 class="contentSection-heading">About</h1>
     <p>I build web applications at <a href="http://tighten.co">Tighten Co.</a> by day, and <a href="http://www.youtube.com/watch?v=2-J-DCbsQzo">lift heavy things competitively</a> by night.</p>

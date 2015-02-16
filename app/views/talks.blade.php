@@ -1,6 +1,7 @@
 @extends('_layout')
 
 @section('content')
+@include('partials.site-header')
 <div class="contentSection">
     <h1 class="contentSection-heading">Talks</h1>
 

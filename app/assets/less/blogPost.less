@@ -1,5 +1,4 @@
 .blogPost {
-    border-top: 1px solid @separator-color;
     margin-bottom: 4em;
     &-published {
         text-align: center;
@@ -15,12 +14,17 @@
     }
 }
 
+.blogPost-header {
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
 .blogPost-title {
-    margin-top: 0.75em;
-    margin-bottom: 1em;
     font-size: @fontSize-jumbo;
     font-weight: 800;
     line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 0.25em;
     a {
         text-decoration: none;
         color: @base-color;
@@ -29,6 +33,13 @@
             text-decoration: underline;
         }
     }
+}
+
+.blogPost-bySection {
+    color: @lightest-color;
+    font-size: @fontSize-smaller;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .blogPost-body {

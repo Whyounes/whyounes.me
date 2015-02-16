@@ -24,4 +24,10 @@ class Post
         $dt = Carbon::createFromFormat('Y-m-d', $this->date);
         return $dt->toRSSString();
     }
+
+    public function prettyDate()
+    {
+        $dt = Carbon::createFromFormat('Y-m-d', $this->date);
+        return $dt->format('F j, Y');
+    }
 }

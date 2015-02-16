@@ -14,7 +14,7 @@ class PostsController extends BaseController
 	public function showIndex()
 	{
 		$view = View::make('index');
-		$view->posts = $this->posts->paginate(3);
+		$view->posts = $this->posts->all();
 		$view->title = 'adamwathan.me';
 		return $view;
 	}
@@ -22,7 +22,7 @@ class PostsController extends BaseController
 	public function showPost($year, $month, $day, $slug)
 	{
 		$date = Carbon\Carbon::createFromDate($year, $month, $day);
-		
+
 		try {
 			$post = $this->posts->byDateAndSlug($date, $slug);
 		} catch (\Exception $e) {
