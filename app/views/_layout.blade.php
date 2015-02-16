@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="alternate" type="application/rss+xml" title="adamwathan.me RSS Feed" href="/rss">
+    <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Open+Sans:300,400,700/Linux+Libertine:400,400i,700,700i">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ elixir('css/application.css') }}">
