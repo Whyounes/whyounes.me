@@ -14,6 +14,11 @@
 </head>
 <body>
     @yield('body')
+    <div class="container">
+        <footer>
+            <p class="footer-content">&copy; Adam Wathan. Proudly built with <a href="http://laravel.com/">Laravel</a>.</p>
+        </footer>
+    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
