@@ -237,6 +237,11 @@ table {
 html {
   font-size: 87.5%;
 }
+@media (min-width: 592px) {
+  html {
+    font-size: 112.5%;
+  }
+}
 @media (min-width: 768px) {
   html {
     font-size: 137.5%;
