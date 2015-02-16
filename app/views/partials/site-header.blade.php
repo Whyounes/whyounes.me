@@ -7,13 +7,16 @@
 <nav class="siteNav">
     <ul class="horizontalNav">
         <li class="horizontalNav-item">
-            {{ link_to_route('about', 'About', [], ['class' => 'siteNav-link']) }}
+            {{ link_to_route('home', 'Blog', [], ['class' => 'siteNav-link']) }}
         </li>
         <li class="horizontalNav-item">
             {{ link_to_route('talks', 'Talks', [], ['class' => 'siteNav-link']) }}
         </li>
         <li class="horizontalNav-item">
             {{ link_to('http://fullstackradio.com', 'Podcast', ['class' => 'siteNav-link']) }}
+        </li>
+        <li class="horizontalNav-item">
+            {{ link_to_route('about', 'About', [], ['class' => 'siteNav-link']) }}
         </li>
     </ul>
 </nav>
