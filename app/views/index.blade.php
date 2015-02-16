@@ -1,7 +1,6 @@
-@extends('_layout')
+@extends('_content-page')
 
 @section('content')
-@include('partials.site-header')
 <div class="contentSection">
     <ul class="postList">
         @foreach($posts as $post)
