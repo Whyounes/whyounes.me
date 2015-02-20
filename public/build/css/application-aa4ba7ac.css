@@ -240,7 +240,7 @@ html {
 @media (min-width: 440px) {
   html {
     font-size: 100%;
-    font-size: 3.3vw;
+    font-size: 3.25vw;
   }
 }
 @media (min-width: 680px) {
@@ -544,6 +544,14 @@ ul.pager li:last-child {
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }
+.link--greyDark {
+  color: rgba(38, 38, 38, 0.8);
+  text-decoration: none;
+}
+.link--greyDark:hover {
+  color: #000;
+  text-decoration: none;
+}
 .avatar {
   border-radius: 50%;
   display: inline-block;
@@ -612,12 +620,4 @@ ul.pager li:last-child {
   font-size: 0.7em;
   color: rgba(89, 89, 89, 0.8);
   padding: 2em 0;
-}
-.footer-content a {
-  text-decoration: none;
-  color: #428bca;
-}
-.footer-content a:hover {
-  color: rgba(0, 0, 0, 0.8);
-  text-decoration: underline;
 }

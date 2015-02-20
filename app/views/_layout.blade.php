@@ -16,7 +16,10 @@
     @yield('body')
     <div class="container">
         <footer>
-            <p class="footer-content">&copy; Adam Wathan. Proudly built with <a href="http://laravel.com/">Laravel</a>.</p>
+            <p class="footer-content">
+                &copy; <a class="link--greyDark" href="/">Adam Wathan</a>.
+                Proudly built with <a class="link--greyDark" href="http://laravel.com/">Laravel</a>.
+            </p>
         </footer>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

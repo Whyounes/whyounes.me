@@ -72,6 +72,15 @@
     }
 }
 
+.link--greyDark {
+    color: @gray-1;
+    text-decoration: none;
+    &:hover {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
 .avatar {
     .img--circle;
     display: inline-block;
@@ -148,12 +157,4 @@
     font-size: @fontSize-smaller;
     color: @light-color;
     padding: 2em 0;
-    a {
-        text-decoration: none;
-        color: @link-color;
-        &:hover {
-            color: @base-color;
-            text-decoration: underline;
-        }
-    }
 }
