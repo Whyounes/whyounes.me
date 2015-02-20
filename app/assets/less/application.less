@@ -105,10 +105,12 @@
 .container {
     .center();
     box-sizing: border-box;
-    width: @page-width;
     max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @media (min-width: @desktop) {
+        width: @page-width;
+    }
 }
 
 .contentSection {

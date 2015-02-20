@@ -237,12 +237,13 @@ table {
 html {
   font-size: 87.5%;
 }
-@media (min-width: 592px) {
+@media (min-width: 440px) {
   html {
-    font-size: 112.5%;
+    font-size: 100%;
+    font-size: 3.3vw;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 680px) {
   html {
     font-size: 137.5%;
   }
@@ -460,7 +461,7 @@ footer {
   display: inline;
   margin-right: 1em;
 }
-@media (min-width: 768px) {
+@media (min-width: 680px) {
   .horizontalNav-item {
     margin-right: 2em;
   }
@@ -551,7 +552,7 @@ ul.pager li:last-child {
   width: 80px;
   height: 80px;
 }
-@media (min-width: 768px) {
+@media (min-width: 680px) {
   .avatar {
     width: 150px;
     height: 150px;
@@ -566,7 +567,7 @@ ul.pager li:last-child {
   width: 24px;
   height: 24px;
 }
-@media (min-width: 768px) {
+@media (min-width: 680px) {
   .avatar--small {
     width: 36px;
     height: 36px;
@@ -579,10 +580,14 @@ ul.pager li:last-child {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  width: 31em;
   max-width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 680px) {
+  .container {
+    width: 31em;
+  }
 }
 .contentSection-heading {
   font-size: 1.5em;
