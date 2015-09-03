@@ -11,6 +11,6 @@ It was a nice and small little problem so I ported the original solution to PHP 
 
 Check it out and let me know what you think!
 
-<div class="talk-video">
+<div class="talk-video talk-video-screencast">
     <iframe src="//player.vimeo.com/video/115719437" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>

@@ -412,6 +412,9 @@ footer {
   width: 100%;
   height: 100%;
 }
+.talk-video-screencast {
+  padding-bottom: 62.5%;
+}
 .siteHeader {
   margin-top: 2em;
 }

@@ -9,6 +9,6 @@ After [my presentation at Laracon this year](/2015/09/02/chasing-perfect-at-lara
 
 This screencast covers how I'd approach implementing the same idea in a real Laravel application with Eloquent, by using polymorphic relationships and delegation to accomplish the same thing without having to resort to any nasty conditionals.
 
-<div class="talk-video">
+<div class="talk-video talk-video-screencast">
     <iframe src="//player.vimeo.com/video/138152087" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
